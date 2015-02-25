@@ -16,7 +16,17 @@ module Baby where
 --
 -- >>> doubleUs 28 88 + doubleMe 123
 -- 478
+-- 
+-- >>> doubleSmallNumber 100
+-- 200
+--
+-- >>> doubleSmallNumber 101
+-- 101
 
 doubleMe x = x + x
 
 doubleUs x y = x * 2 + y * 2
+
+doubleSmallNumber x = 	if x > 100
+						then x
+						else x*2
